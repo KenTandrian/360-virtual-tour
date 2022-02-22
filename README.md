@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+# 360 Virtual Tour
+[![issues](https://img.shields.io/github/issues/KenTandrian/360-virtual-tour)](https://github.com/KenTandrian/360-virtual-tour/issues)
+[![language](https://img.shields.io/github/languages/count/KenTandrian/360-virtual-tour)](https://github.com/KenTandrian/360-virtual-tour/search?l=javascript)
+[![top-language](https://img.shields.io/github/languages/top/KenTandrian/360-virtual-tour)](https://github.com/KenTandrian/360-virtual-tour/search?l=javascript)
+[![commit](https://img.shields.io/github/commit-activity/m/KenTandrian/360-virtual-tour)](https://github.com/KenTandrian/360-virtual-tour/commits/main)
+[![last-commit](https://img.shields.io/github/last-commit/KenTandrian/360-virtual-tour)](https://github.com/KenTandrian/360-virtual-tour/commits/main)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
+A website that shows 360 Virtual Tour made using Pannellum.
+This project is made as a project for Alterra Academy ICP Front-End on February 22, 2022, and was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## For Developers who Forked this Repo
+You can do these commands in Git Bash:\
+`npm start` > Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.\
+`npm test`\
+`npm run build`\
+`npm run eject`
 
-### `npm start`
+## Technologies
+[![HTML5](https://img.shields.io/badge/-HTML5-black?style=for-the-badge&logo=html5&logoColor=orange)](https://github.com/KenTandrian?tab=repositories&language=html)
+[![CSS3](https://img.shields.io/badge/-CSS3-black?style=for-the-badge&logo=css3&logoColor=blue)](https://github.com/KenTandrian?tab=repositories&language=css)
+[![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=for-the-badge&logo=javascript)](https://github.com/KenTandrian?tab=repositories&language=javascript)
+[![React](https://img.shields.io/badge/-React-black?style=for-the-badge&logo=react)](https://github.com/KenTandrian?tab=repositories&language=javascript)
+[![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)](https://github.com/KenTandrian?tab=repositories)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Dependencies
+[![react](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/react)](https://www.npmjs.com/package/react)
+[![react-router-dom](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/react-router-dom)](https://www.npmjs.com/package/react-router-dom)
+[![pannellum-react](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/pannellum-react)](https://www.npmjs.com/package/pannellum-react)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+[Go to List of Dependencies](https://github.com/KenTandrian/360-virtual-tour/network/dependencies)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 
+&#169; Ken Tandrian 2022.
