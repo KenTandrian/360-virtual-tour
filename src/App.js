@@ -6,7 +6,7 @@ import Page2 from './pages/page2';
 import Page3 from './pages/page3';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
       <Routes>
