@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/360-virtual-tour/static/css/main.d5af1199.css",
+    "main.js": "/360-virtual-tour/static/js/main.2f0d18ea.js",
+    "static/js/787.070e79a9.chunk.js": "/360-virtual-tour/static/js/787.070e79a9.chunk.js",
+    "static/media/sprites.svg": "/360-virtual-tour/static/media/sprites.c08944fed399e84633d0.svg",
+    "index.html": "/360-virtual-tour/index.html",
+    "static/media/grabbing.svg": "/360-virtual-tour/static/media/grabbing.92ec62eb995e79248066.svg",
+    "static/media/grab.svg": "/360-virtual-tour/static/media/grab.6a052e927d39314632fd.svg",
+    "static/media/background.svg": "/360-virtual-tour/static/media/background.73c746e88409ccb4b512.svg",
+    "static/media/compass.svg": "/360-virtual-tour/static/media/compass.0f193cd39061ea43cc46.svg",
+    "main.d5af1199.css.map": "/360-virtual-tour/static/css/main.d5af1199.css.map",
+    "main.2f0d18ea.js.map": "/360-virtual-tour/static/js/main.2f0d18ea.js.map",
+    "787.070e79a9.chunk.js.map": "/360-virtual-tour/static/js/787.070e79a9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5af1199.css",
+    "static/js/main.2f0d18ea.js"
+  ]
+}
