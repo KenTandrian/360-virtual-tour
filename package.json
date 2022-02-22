@@ -2,7 +2,7 @@
   "name": "virtual-tour",
   "version": "0.1.0",
   "homepage": "https://kentandrian.github.io/360-virtual-tour",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.3",
