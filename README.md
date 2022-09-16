@@ -4,6 +4,7 @@
 [![top-language](https://img.shields.io/github/languages/top/KenTandrian/360-virtual-tour)](https://github.com/KenTandrian/360-virtual-tour/search?l=javascript)
 [![commit](https://img.shields.io/github/commit-activity/m/KenTandrian/360-virtual-tour)](https://github.com/KenTandrian/360-virtual-tour/commits/main)
 [![last-commit](https://img.shields.io/github/last-commit/KenTandrian/360-virtual-tour)](https://github.com/KenTandrian/360-virtual-tour/commits/main)
+[![pages-build-deployment](https://github.com/KenTandrian/360-virtual-tour/actions/workflows/pages/pages-build-deployment/badge.svg?branch=gh-pages)](https://github.com/KenTandrian/360-virtual-tour/actions/workflows/pages/pages-build-deployment)
 
 ## Introduction
 A website that shows 360 Virtual Tour made using Pannellum.
