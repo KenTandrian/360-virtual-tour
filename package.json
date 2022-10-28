@@ -4,7 +4,7 @@
   "homepage": "https://kentandrian.github.io/360-virtual-tour",
   "private": true,
   "dependencies": {
-    "@svgr/webpack": "^6.5.0",
+    "@svgr/webpack": "^6.5.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^12.1.5",
     "@testing-library/user-event": "^14.4.3",
