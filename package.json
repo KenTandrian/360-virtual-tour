@@ -8,7 +8,7 @@
     "pannellum-react": "^1.3.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.12.0",
+    "react-router-dom": "^6.12.1",
     "web-vitals": "^3.3.2"
   },
   "scripts": {
