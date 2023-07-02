@@ -1,0 +1,13 @@
+name: Pull Request Reviewer
+
+on: pull_request_target
+
+permissions:
+  pull-requests: write
+  contents: write
+  repository-projects: read
+
+jobs:
+  review-dependabot-pr:
+    name: Review Dependabot PR
+    uses: KenTandrian/workflows/.github/workflows/dependabot-reviewer.yml@main
