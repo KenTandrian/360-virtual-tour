@@ -13,11 +13,23 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
+      - name: Get NPM Cache Directory
+        id: npm-cache-dir
+        run: echo "dir=$(npm config get cache)" >> $GITHUB_OUTPUT
+
+      - name: Restore NPM Cache
+        uses: actions/cache/restore@v3
+        with:
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: node-cache-${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          # If source files changed but packages didn't, rebuild from a prior cache.
+          restore-keys: |
+            node-cache-${{ runner.os }}-npm-
+
       - name: Setup Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: npm
 
       - name: Install Dependencies
         run: npm ci
