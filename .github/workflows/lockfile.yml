@@ -1,79 +1,17 @@
 name: Lockfile Maintenance
-on:
-  schedule:
-    # Every Sunday at 00:00 UTC+7
-    - cron: "0 17 * * 6"
-  workflow_dispatch:
-
-env:
-  NODE_VERSION: 18.x
+on: workflow_dispatch
 
 jobs:
-  maintenance:
-    name: Lockfile maintenance with Node.js 18.x
-    runs-on: ubuntu-latest
+  run:
+    name: Run workflow
+    uses: KenTandrian/workflows/.github/workflows/lockfile.yml@main
     permissions:
       contents: write
-    steps:
-      - name: 🛎️ Checkout Repository
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          ref: ${{ github.head_ref }}
-          token: ${{ secrets.REPO_TOKEN }}
-
-      - name: 📁 Get NPM Cache Directory
-        id: npm-cache-dir
-        run: echo "dir=$(npm config get cache)" >> $GITHUB_OUTPUT
-
-      - name: ☁️ Cache NPM
-        uses: actions/cache@v3
-        with:
-          path: ${{ steps.npm-cache-dir.outputs.dir }}
-          key: node-cache-${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            node-cache-${{ runner.os }}-npm-
-
-      - name: ⚙️ Setup Node.js ${{ env.NODE_VERSION }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ env.NODE_VERSION }}
-
-      - name: 📦 Install Dependencies
-        run: npm ci --cache ${{ steps.npm-cache-dir.outputs.dir }} --prefer-offline
-
-      - name: ⬆️ Update Lockfile
-        run: |
-          npm upgrade
-          # Workaround for @svgr/webpack in react-scripts dependencies
-          ver=$(npm info @svgr/webpack version)
-          sed -i "s|\"@svgr/webpack\": \".*|\"@svgr/webpack\": \"^${ver}\",|" package-lock.json
-          npm i
-
-      - name: 🔍 Check Lockfile Changes
-        id: status
-        run: |
-          if [ $(git status --porcelain | wc -l) == "0" ]; then
-            echo "No lockfile changes detected, exiting..."
-            echo "STATUS=0" >> $GITHUB_OUTPUT
-          else
-            echo "STATUS=1" >> $GITHUB_OUTPUT
-          fi
-
-      - name: ⬆️ Update Version
-        if: steps.status.outputs.STATUS == '1'
-        id: bump
-        run: |
-          chmod +x ./scripts/bump-version.sh
-          ./scripts/bump-version.sh
-          echo "VERSION=$(npm pkg get version | tr -d '"')" >> $GITHUB_OUTPUT
-
-      - name: 🚀 Push Changes
-        if: steps.status.outputs.STATUS == '1'
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .
-          git commit -m "chore(deps): v${{ steps.bump.outputs.VERSION }} - lockfile maintenance"
-          git pull --rebase
-          git push
+    with:
+      package-manager: npm
+      post-upgrade: |
+        # Workaround for @svgr/webpack in react-scripts dependencies
+        ver=$(npm info @svgr/webpack version)
+        sed -i "s|\"@svgr/webpack\": \".*|\"@svgr/webpack\": \"^${ver}\",|" package-lock.json
+        npm i
+    secrets: inherit
