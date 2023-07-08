@@ -9,7 +9,7 @@ const Page1 = () => {
     const [yaw, setYaw] = useState(0);
     const [pitch, setPitch] = useState(0);
     const [ image ] = useState('https://pannellum.org/images/alma.jpg');
-    const panImage = useRef(null);
+    const panImage = useRef<any>(null);
 
     return (
         <div>
@@ -26,6 +26,7 @@ const Page1 = () => {
                 previewTitle ="360 Virtual Tour"
                 author="Ken Tandrian"
                 previewAuthor="Ken Tandrian"
+                // @ts-ignore
                 authorURL="https://github.com/KenTandrian"
                 pitch={10}
                 yaw={180}
@@ -35,7 +36,7 @@ const Page1 = () => {
                 compass
                 disableKeyboardCtrl
                 ref={panImage}
-                onMouseup = {(event) => {
+                onMouseup = {(event: any) => {
                     setPitch(panImage.current.getViewer().mouseEventToCoords(event)[0]);
                     setYaw(panImage.current.getViewer().mouseEventToCoords(event)[1]);
                 }}
@@ -45,6 +46,7 @@ const Page1 = () => {
                     pitch={-1.4}
                     yaw={113.6}
                     handleClick={() => navigate('/page2')}
+                    // @ts-ignore
                     name='image info'
                 />
                 <Pannellum.Hotspot
