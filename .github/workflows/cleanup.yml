@@ -1,0 +1,19 @@
+name: Cleanup Old Cache
+on:
+  workflow_run:
+    workflows: ["Lockfile Maintenance", "Deploy to GitHub Pages"]
+    branches: [main]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  cleanup-node:
+    name: Cleanup NPM
+    uses: KenTandrian/workflows/.github/workflows/cleanup.yml@main
+    with:
+      name: NPM
+      pattern: node-cache-Linux-npm-
