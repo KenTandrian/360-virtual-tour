@@ -1,11 +1,12 @@
 import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Index from './pages';
-import Page1 from './pages/page1';
-import Page2 from './pages/page2';
-import Page3 from './pages/page3';
 import ErrorPage from './error';
 import './App.css';
+
+const Page1 = React.lazy(() => import('./pages/page1'));
+const Page2 = React.lazy(() => import('./pages/page2'));
+const Page3 = React.lazy(() => import('./pages/page3'));
 
 const router = createBrowserRouter([
   {
