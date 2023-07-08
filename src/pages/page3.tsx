@@ -69,6 +69,7 @@ const Page3 = () => {
                                 yaw = {yaw}
                                 handleClick={() => type === 'custom' && navigate(hotspot.navigate)}
                                 text={name}
+                                key={idx}
                             />
                         )
                     })

@@ -78,6 +78,7 @@ const Page2 = () => {
                                     () => type === 'custom' && navigate(hotspot.navigate)
                                 }
                                 text = {name}
+                                key = {index}
                             />
                         )
                     })
