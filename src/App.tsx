@@ -4,12 +4,14 @@ import Index from './pages';
 import Page1 from './pages/page1';
 import Page2 from './pages/page2';
 import Page3 from './pages/page3';
+import ErrorPage from './error';
 import './App.css';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Index/>,
+    errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Page1 /> },
       { path: 'page2', element: <Page2 /> },
