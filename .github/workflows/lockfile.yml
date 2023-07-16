@@ -9,9 +9,4 @@ jobs:
       contents: write
     with:
       package-manager: npm
-      post-upgrade: |
-        # Workaround for @svgr/webpack in react-scripts dependencies
-        ver=$(npm info @svgr/webpack version)
-        sed -i "s|\"@svgr/webpack\": \".*|\"@svgr/webpack\": \"^${ver}\",|" package-lock.json
-        npm i
     secrets: inherit
