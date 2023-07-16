@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { startTransition, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Pannellum } from "pannellum-react";
 
@@ -75,7 +75,7 @@ const Page2 = () => {
                                 pitch = {pitch}
                                 yaw = {yaw}
                                 handleClick = {
-                                    () => type === 'custom' && navigate(hotspot.navigate)
+                                    () => type === 'custom' && startTransition(() => navigate(hotspot.navigate))
                                 }
                                 text = {name}
                                 key = {index}

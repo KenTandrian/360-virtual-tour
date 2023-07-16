@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import { startTransition, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Pannellum } from "pannellum-react";
 
@@ -45,7 +45,7 @@ const Page1 = () => {
                     type='custom'
                     pitch={-1.4}
                     yaw={113.6}
-                    handleClick={() => navigate('/page2')}
+                    handleClick={() => startTransition(() => navigate('/page2'))}
                     // @ts-ignore
                     name='image info'
                 />
