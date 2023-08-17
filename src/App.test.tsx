@@ -1,9 +1,30 @@
-import React from 'react';
-import { render, screen } from '@testing-library/react';
+import { render, screen, waitFor } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+export const asyncRender = (ui: React.ReactElement) => {
+  return waitFor(async () => render(ui));
+};
+
+describe('renders application', () => {
+  beforeEach(() => asyncRender(<App />));
+
+  it('renders title', async () => {
+    const title = screen.getByText(/360 Virtual Tour/i);
+    expect(title).toBeInTheDocument();
+  });
+
+  it('renders subtitle', async () => {
+    const subtitle = screen.getByText(/Ken Tandrian/i);
+    expect(subtitle).toBeInTheDocument();
+  });
+
+  it('renders pitch', async () => {
+    const pitch = screen.getByText(/Pitch/i);
+    expect(pitch).toBeInTheDocument();
+  });
+
+  it('renders yaw', async () => {
+    const yaw = screen.getByText(/Yaw/i);
+    expect(yaw).toBeInTheDocument();
+  });
+})
