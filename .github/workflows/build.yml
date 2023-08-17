@@ -36,3 +36,6 @@ jobs:
 
       - name: Build Application
         run: npm run build
+
+      - name: Run test
+        run: npm run test
