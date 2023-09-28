@@ -1,6 +1,6 @@
 {
   "name": "virtual-tour",
-  "version": "0.1.96",
+  "version": "0.2.15",
   "homepage": "https://kentandrian.github.io/360-virtual-tour",
   "private": true,
   "dependencies": {
