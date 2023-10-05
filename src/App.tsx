@@ -22,7 +22,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/",
+    basename: import.meta.env.MODE === "test" ? "/" : import.meta.env.BASE_URL,
   }
 );
 
