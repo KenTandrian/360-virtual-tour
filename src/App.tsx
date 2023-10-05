@@ -22,7 +22,7 @@ const router = createBrowserRouter(
     },
   ],
   {
-    basename: "/360-virtual-tour",
+    basename: "/",
   }
 );
 

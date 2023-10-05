@@ -7,6 +7,7 @@
     "start": "vite",
     "build": "tsc && vite build",
     "test": "vitest run",
+    "test:watch": "vitest",
     "serve": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -29,6 +30,7 @@
     "@types/react-dom": "^18.2.10",
     "@vitejs/plugin-react": "^4.1.0",
     "gh-pages": "^6.0.0",
+    "jsdom": "^22.1.0",
     "prop-types": "^15.8.1",
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
