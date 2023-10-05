@@ -3,11 +3,11 @@ on: [pull_request]
 
 jobs:
   build:
-    name: Build application with Node.js ${{ matrix.node-version }}
+    name: Build application with Node.js
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.x]
 
     steps:
       - name: Checkout Repository
