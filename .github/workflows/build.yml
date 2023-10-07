@@ -1,14 +1,13 @@
 name: Build Application
 on: [pull_request]
 
+env:
+  NODE_VERSION: 20.x
+
 jobs:
   build:
     name: Build application with Node.js
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [20.x]
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -26,10 +25,10 @@ jobs:
           restore-keys: |
             node-cache-${{ runner.os }}-npm-
 
-      - name: Setup Node.js ${{ matrix.node-version }}
+      - name: Setup Node.js ${{ env.NODE_VERSION }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Install Dependencies
         run: npm ci
