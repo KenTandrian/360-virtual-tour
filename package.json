@@ -32,7 +32,7 @@
     "prop-types": "^15.8.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.0",
-    "vite-plugin-pwa": "^0.16.7",
+    "vite-plugin-pwa": "^0.17.0",
     "vitest": "^0.34.6",
     "workbox-precaching": "^7.0.0",
     "workbox-routing": "^7.0.0"
