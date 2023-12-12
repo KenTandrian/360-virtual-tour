@@ -33,7 +33,7 @@
     "typescript": "^5.3.3",
     "vite": "^5.0.7",
     "vite-plugin-pwa": "^0.17.4",
-    "vitest": "^1.0.2",
+    "vitest": "^1.0.4",
     "workbox-precaching": "^7.0.0",
     "workbox-routing": "^7.0.0"
   }
