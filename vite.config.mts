@@ -12,7 +12,7 @@ export default defineConfig({
       filename: "serviceWorker.ts",
       srcDir: "src",
       strategies: "injectManifest",
-      manifestFilename: "manifest.json",
+      manifest: false,
     }),
     react(),
   ],
