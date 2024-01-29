@@ -28,7 +28,6 @@
     "@types/react": "18.2.48",
     "@types/react-dom": "18.2.18",
     "@vitejs/plugin-react-swc": "3.5.0",
-    "esbuild": "0.20.0",
     "gh-pages": "6.1.1",
     "jsdom": "24.0.0",
     "prop-types": "15.8.1",
