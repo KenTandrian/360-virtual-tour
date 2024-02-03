@@ -10,7 +10,7 @@ updates:
     directory: "/"
     schedule:
       interval: daily
-    open-pull-requests-limit: 20
+    open-pull-requests-limit: 0 # disable
 
   # Maintain dependencies for github-actions
   - package-ecosystem: github-actions
