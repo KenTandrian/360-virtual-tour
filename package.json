@@ -33,7 +33,7 @@
     "prop-types": "15.8.1",
     "rollup": "4.13.0",
     "typescript": "5.4.3",
-    "vite": "5.1.1",
+    "vite": "5.2.3",
     "vite-plugin-pwa": "0.17.5",
     "vitest": "1.2.2",
     "workbox-precaching": "7.0.0",
