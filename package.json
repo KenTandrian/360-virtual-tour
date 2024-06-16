@@ -20,7 +20,7 @@
     "web-vitals": "4.1.1"
   },
   "devDependencies": {
-    "@swc/core": "1.5.0",
+    "@swc/core": "1.6.1",
     "@testing-library/jest-dom": "6.4.2",
     "@testing-library/react": "15.0.5",
     "@testing-library/user-event": "14.5.2",
