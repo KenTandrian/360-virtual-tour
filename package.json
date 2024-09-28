@@ -17,7 +17,7 @@
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-router-dom": "6.26.2",
-    "web-vitals": "4.1.1"
+    "web-vitals": "4.2.3"
   },
   "devDependencies": {
     "@swc/core": "1.6.1",
