@@ -1,6 +1,6 @@
 {
   "name": "virtual-tour",
-  "version": "0.4.50",
+  "version": "0.4.60",
   "homepage": "https://360-virtual-tour.netlify.app",
   "private": true,
   "scripts": {
