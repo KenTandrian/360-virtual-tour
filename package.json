@@ -36,7 +36,7 @@
     "vite": "5.4.10",
     "vite-plugin-pwa": "0.20.5",
     "vitest": "2.1.4",
-    "workbox-precaching": "7.1.0",
+    "workbox-precaching": "7.3.0",
     "workbox-routing": "7.1.0"
   }
 }
