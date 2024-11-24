@@ -34,7 +34,7 @@
     "rollup": "4.27.4",
     "typescript": "5.7.2",
     "vite": "5.4.11",
-    "vite-plugin-pwa": "0.20.5",
+    "vite-plugin-pwa": "0.21.0",
     "vitest": "2.1.4",
     "workbox-precaching": "7.3.0",
     "workbox-routing": "7.3.0"
