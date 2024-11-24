@@ -34,7 +34,7 @@ You can do these commands in Git Bash:\
 ## Dependencies
 
 [![react](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/react)](https://www.npmjs.com/package/react)
-[![react-router-dom](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/react-router-dom)](https://www.npmjs.com/package/react-router-dom)
+[![react-router](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/react-router)](https://www.npmjs.com/package/react-router)
 [![pannellum-react](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/pannellum-react)](https://www.npmjs.com/package/pannellum-react)
 
 [Go to List of Dependencies](https://github.com/KenTandrian/360-virtual-tour/network/dependencies)
