@@ -33,9 +33,18 @@ You can do these commands in Git Bash:\
 
 ## Dependencies
 
+### Production
+
 [![react](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/react)](https://www.npmjs.com/package/react)
 [![react-router](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/react-router)](https://www.npmjs.com/package/react-router)
 [![pannellum-react](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/pannellum-react)](https://www.npmjs.com/package/pannellum-react)
+
+### Development
+
+[![@swc/core](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/dev/@swc/core)](https://www.npmjs.com/package/@swc/core)
+[![typescript](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/dev/typescript)](https://www.npmjs.com/package/typescript)
+[![vite](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/dev/vite)](https://www.npmjs.com/package/vite)
+[![vitest](https://img.shields.io/github/package-json/dependency-version/KenTandrian/360-virtual-tour/dev/vitest)](https://www.npmjs.com/package/vitest)
 
 [Go to List of Dependencies](https://github.com/KenTandrian/360-virtual-tour/network/dependencies)
 
